@@ -1,0 +1,130 @@
+body, html {
+   height: 100%;
+   margin: 0;
+   padding: 0;
+}
+#image {
+   background-image: url("IMG_0435.jpg");
+   width: 100%;
+   height: 1000px;
+   max-height: 1000px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: 100%;
+}
+body {
+   background-color: rgb(189, 105, 105); 
+   text-align: center;
+   overflow: scroll;
+}
+#image .block1 {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   margin-left: -150px;
+   margin-top: -150px;
+   width: 300px;
+   height: 300px;
+   padding: 5px;
+   border: 3px solid white;
+   border-radius: 5px;
+   opacity: .7;
+   animation-name: borderTitle;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+   animation-delay: -60s;
+}
+@keyframes borderTitle {
+   0% {border: 3px rgb(0, 204, 255) solid; left: 50%; right: 50%; transform: rotate(0deg)}
+   12.5% {border: 3px rgb(255, 102, 0) solid;  left: 50%; right: 50%; transform: rotate(45deg);}
+   25% {border: 3px rgb(0, 255, 106) solid; left: 50%; right: 50%; transform: rotate(90deg);}
+   37.5% {border: 3px rgb(0, 204, 255) solid; left: 50%; right: 50%;transform: rotate(135deg);}
+   50% {border: 3px rgb(255, 102, 0) solid;  left: 50%; right: 50%; transform: rotate(180deg);} 
+   62.5% {border: 3px rgb(0, 255, 106) solid; left: 50%; right: 50%; transform: rotate(225deg);}
+   75% {border: 3px rgb(0, 204, 255) solid; left: 50%; right: 50%;transform: rotate(270deg);}
+   87.5% {border: 3px rgb(255, 102, 0) solid;  left: 50%; right: 50%; transform: rotate(315deg);}
+   100% {border: 3px rgb(0, 255, 106) solid; left: 50%; right: 50%; transform: rotate(360deg);} 
+}
+
+.title {
+   color: white;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   margin-left: -25%;
+   margin-top: -12.5%;
+   animation-name: titleName;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease;
+   animation-delay: -60s;
+}
+@keyframes titleName {
+   0% {color: rgb(0, 204, 255); transform: rotate(0deg);}
+   12.5% {color: rgb(255, 102, 0); transform: rotate(-45deg);}
+   25% {color: rgb(0, 255, 106); transform: rotate(-90deg);} 
+   37.5% {color: rgb(0, 204, 255); transform: rotate(-135deg);} 
+   50% {color: rgb(255, 102, 0); transform: rotate(-180deg);}
+   62.5% {color: rgb(0, 255, 106); transform: rotate(-225deg);}  
+   75% {color: rgb(0, 204, 255); transform: rotate(-270deg);}
+   87.5% {color: rgb(255, 102, 0); transform: rotate(-315deg);}
+   100% {color: rgb(0, 255, 106); transform: rotate(-360deg);}   
+}
+.nav {
+   font-family: 'Poppins', sans-serif;
+   text-align: center;
+   text-transform: uppercase;
+   font-weight: 500;
+   letter-spacing: 1px; 
+}
+.nav * {
+   box-sizing: border-box;
+   transition: all 0.35s ease;
+}
+.nav li {
+   display: inline-block;
+   list-style: outside none none;
+   margin: .5em 1em;
+   padding: 0;
+}
+.nav a {
+   padding: .5em 0.8em;
+   color: rgba(255, 255, 255, 0);
+   position: relative;
+   text-decoration: none;
+   font-size: 20px;   
+}
+.nav a:before,
+.nav a:after {
+   height: 14px;
+   width: 14px;
+   position: absolute;
+   content: '';
+   transition: all 0.35s ease;
+   opacity: 0;
+}
+.nav a:before {
+   right: 0;
+   top: 0;
+   border-right: 3px solid red;
+   border-top: 3px solid red;
+   transform: translate(-100%, 50%);
+}
+footer {
+   background-color: rgb(37, 36, 36);
+   color: white;
+   height: 60px;
+   text-align: center;
+   position: relative;
+   width: 100%;
+   bottom: 0px;
+   opacity: .8;
+   z-index: 9999;
+   overflow: hidden;
+}  
+#copyright {
+   font-family: Courier New;
+   letter-spacing: 2px;
+} 
+
+
