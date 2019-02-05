@@ -4,6 +4,10 @@ body, html {
         margin: 0;
         padding: 0;
      }
+     #box *{
+         box-sizing: border-box;
+         transition: all 0.35s ease;
+     }
 
 #box {
     background: red;
@@ -19,7 +23,6 @@ body, html {
 
 }
 #box .realbox {
-    background-color: green;
     position: absolute;
     width: 100px;
     height: 100px;
@@ -27,8 +30,9 @@ body, html {
     left: 50%; 
     margin-left: -50px;
     text-align: center;
-    border: 2px solid green;
-    border-radius: 10px;
+    border-right: 2px dashed green;
+    border-top: 2px dashed green;
+
 }
 #box .realbox p {
     position: absolute;
