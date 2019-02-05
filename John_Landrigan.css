@@ -45,25 +45,43 @@ body {
    87.5% {border: 3px rgb(255, 102, 0) solid;  left: 50%; right: 50%; transform: rotate(315deg);}
    100% {border: 3px rgb(0, 255, 106) solid; left: 50%; right: 50%; transform: rotate(360deg);} 
 }
-
-.title {
+h1 {
+   font-family: 'Poppins', sans-serif;
+   font-weight: bold;
+   color: #fff;
+   font-size: 42px;
+   text-transform: uppercase;
+   padding:0.4em 1em;
+   top: 20%;
+   left: 20%;
+   transform: translate(-50%, -50%);
+}
+.overlay {
+   position: absolute;
+}
+#title {
    color: white;
    position: absolute;
+   text-align: center;
+   height: 150px;
+   width: 150px;
    top: 50%;
    left: 50%;
-   margin-left: -25%;
-   margin-top: -12.5%;
+   margin-left: -75px;
+   margin-top: -75px;
    animation-name: titleName;
    font-family: 'Exo', sans-serif;
+   font-size: 30px;
+   text-transform: none;
    animation-duration: 10s;
    animation-iteration-count: infinite;
    animation-timing-function: ease;
    animation-delay: -60s;
 }
 @keyframes titleName {
-   0% {color: rgb(0, 204, 255); transform: rotate(0deg);}
-   12.5% {color: rgb(255, 102, 0); transform: rotate(-45deg);}
-   25% {color: rgb(0, 255, 106); transform: rotate(-90deg);} 
+   0% {color: rgb(0, 204, 255); transform: translateX(-12.5%) translateY(12.5%) rotate(0deg);}
+   12.5% {color: rgb(255, 102, 0); transform:  translateX(0%) translateY(12.5%) rotate(-45deg);}
+   25% {color: rgb(0, 255, 106); transform:  translateX(25%) translateY(12.5%) rotate(-90deg);} 
    37.5% {color: rgb(0, 204, 255); transform: rotate(-135deg);} 
    50% {color: rgb(255, 102, 0); transform: rotate(-180deg);}
    62.5% {color: rgb(0, 255, 106); transform: rotate(-225deg);}  
@@ -71,11 +89,10 @@ body {
    87.5% {color: rgb(255, 102, 0); transform: rotate(-315deg);}
    100% {color: rgb(0, 255, 106); transform: rotate(-360deg);}   
 }
-.nav {
+nav {
    color: rgb(53, 51, 51);
-   font-family: 'Major Mono Display', monospace;
+   font-family: 'Abel', sans-serif;
    text-align: center;
-   text-transform: uppercase;
    font-weight: 500;
    letter-spacing: 1px; 
 }

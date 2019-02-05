@@ -1,0 +1,41 @@
+body, html {
+    background-color: gray;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+     }
+
+#box {
+    background: red;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -252px;
+    position: relative;
+    border: 2px solid red;
+    border-radius: 10px;
+
+}
+#box .realbox {
+    background-color: green;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 25%;
+    left: 50%; 
+    margin-left: -50px;
+    text-align: center;
+    border: 2px solid green;
+    border-radius: 10px;
+}
+#box .realbox p {
+    position: absolute;
+    width: 45px;
+    height: 25px;
+    top: 25%;
+    left: 25%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    letter-spacing: 1px;
+}
